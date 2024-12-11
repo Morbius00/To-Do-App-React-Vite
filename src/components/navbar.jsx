@@ -1,15 +1,23 @@
-
-
-function navbar() {
+function Navbar() {
   return (
-    <div className="flex flex-col items-center justify-center z-50">
-      <div className="md:w-[1325px] w-[390px] h-[45px] md:h-[76px] rounded-2xl bg-gradient-to-r from-transparent to-white/10 shadow-md backdrop-blur-14 flex items-center border-gray-800 border-[0.1em]">
-        <div className="flex flex-row md:space-x-[900px] space-x-[60px] ">
-          <div className="flex items-center justify-center mx-11 md:text-2xl text-xl font-semibold text-white">
+    <div className="flex flex-col items-center justify-center z-50 w-full">
+      <div className="max-w-[1325px] w-full px-4 sm:px-6 lg:px-8 h-[45px] sm:h-[60px] lg:h-[76px] rounded-2xl bg-gradient-to-r from-transparent to-white/10 shadow-md backdrop-blur-md flex items-center border border-gray-800">
+        <div className="flex items-center justify-between w-full">
+          {/* App Name */}
+          <div className="flex items-center justify-center text-lg sm:text-xl lg:text-2xl font-semibold text-white">
             TO-DO APP
           </div>
-          <div className="flex items-center justify-center mx-11 md:w-[191px] md:h-[55px] w-[121px] h-[32px] bg-gradient-to-r from-[#1d3e4e] to-[#74c2e9] rounded-xl text-xl font-semibold text-white ">
-          <a href="https://github.com/Morbius00" target="_blank" rel="noopener noreferrer"><button>Connect</button></a>
+          {/* Connect Button */}
+          <div className="flex items-center">
+            <a
+              href="https://github.com/Morbius00"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-[100px] sm:w-[140px] lg:w-[191px] h-[30px] sm:h-[40px] lg:h-[55px] bg-gradient-to-r from-[#1d3e4e] to-[#74c2e9] rounded-xl text-xs sm:text-sm lg:text-xl font-semibold text-white">
+                Connect
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -17,6 +25,5 @@ function navbar() {
   );
 }
 
-export default navbar
 
-
+export default Navbar;
